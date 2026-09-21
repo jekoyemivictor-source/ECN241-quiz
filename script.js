@@ -1,57 +1,227 @@
 // ECN 241 Quiz — Batch 1 (Questions 1-38)
 // correct: index of correct option (0-based)
 const quizData = [
-  { q: "1. Which of the following is not a flow?", options: ["Capital", "Income", "Investment", "Depreciation"], correct: 0, explanation: "Capital is a stock (measured at a point in time). Income, investment, and depreciation are all flows measured over a period." },
-  { q: "2. Intermediate goods are those goods:", options: ["Which have not yet crossed the boundary line of production", "Which are purchased by one firm from another firm for resale", "Which are not included in the estimation of national products", "All of the above"], correct: 3, explanation: "All three statements describe characteristics of intermediate goods, so 'All of the above' is correct." },
-  { q: "3. Study of macroeconomics is concerned with:", options: ["Theory of demand", "Determination of aggregate output", "General price level", "Both (b) and (c)"], correct: 3, explanation: "Macroeconomics studies aggregate output and the general price level, not individual demand theory (that's microeconomics)." },
-  { q: "4. Which of the following is a flow?", options: ["Population", "Birth and death", "Water in tank", "None of these"], correct: 1, explanation: "Birth and death rates are measured over a period of time, making them flows. Population and water in a tank are stocks (measured at a point in time)." },
-  { q: "5. Goods that are used by producers for several years and are of high value is known as:", options: ["Intermediate good", "Final goods", "Capital goods", "Both (b) and (c)"], correct: 3, explanation: "Capital goods (machinery, equipment) are long-lasting producer goods, and they are classified as final goods since they aren't resold in the same form." },
-  { q: "6. In order to study the performance of an economy, macroeconomics focuses on:", options: ["Economic policies and policy variables", "National income", "The public sector", "All of the above"], correct: 3, explanation: "Macroeconomics examines all of these together to assess overall economic performance." },
-  { q: "7. Goods that are used up in a single act of consumption are called:", options: ["Durable consumer goods", "Semi-durable consumer goods", "Non-durable consumer goods", "Non-material consumer goods"], correct: 2, explanation: "Non-durable goods (like food) are consumed and used up in a single use, unlike durable goods which last over multiple uses." },
-  { q: "8. In a market clearing model:", options: ["The price level always exists at the interaction of AD and AS", "Output is determined by the interaction of AS and AD", "A shift of AD or AS immediately changes price and/or output", "All of the above"], correct: 3, explanation: "In a market-clearing model, prices adjust instantly so all three statements hold true simultaneously." },
-  { q: "9. Aggregate expenditure is equal to:", options: ["Spending by consumers on consumption goods", "Spending by businesses on investment goods", "Spending by government", "The sum of (a), (b), (c), and (d)"], correct: 3, explanation: "Aggregate expenditure = C + I + G (+ net exports), the sum of spending by all sectors." },
-  { q: "10. Circular flow of income as a model:", options: ["Shows the movement of resources among states", "Shows the movement of funds", "Indicates the flow of human capital", "Shows the movement of resources between firms and households"], correct: 3, explanation: "The circular flow model illustrates how income and resources move between firms and households (and other sectors)." },
-  { q: "11. Withdrawals from the income expenditure system is known as:", options: ["Investment", "Savings", "Leakages", "Consumption"], correct: 2, explanation: "Savings, taxes, and imports are all 'leakages' — withdrawals of spending from the circular flow." },
-  { q: "12. The equilibrium level of national income in a closed economy is where:", options: ["MPC = APC", "Consumption equals savings", "Aggregate expenditure equals national income", "Unemployment rate is about 3% of labour force"], correct: 2, explanation: "Equilibrium national income occurs where planned aggregate expenditure equals national income (output)." },
-  { q: "13. According to the definition, autonomous expenditure will not be affected by a change in:", options: ["Exchange rate", "Interest rate", "Price level", "Real GDP"], correct: 3, explanation: "Autonomous expenditure is, by definition, independent of the level of income/output (real GDP)." },
-  { q: "14. If the money value of final goods and services produced by residents of a country in a year is measured at the prices of the current year, it is called:", options: ["Real GDP", "GDP at constant Price", "GDP at constant Price (dup)", "GDP at current price"], correct: 3, explanation: "Valuing output at current-year prices gives Nominal GDP, also called GDP at current price." },
-  { q: "15. Consumption in the economy depends on all except:", options: ["Consumer confidence", "Interest rate", "Corporate taxes", "Income tax"], correct: 2, explanation: "Corporate taxes affect business profits/investment decisions, not household consumption directly. Personal income tax, confidence, and interest rates all affect consumption." },
-  { q: "16. ____ is a consumption that does not depend on income or disposable income.", options: ["Induced consumption", "Capital consumption", "Autonomous consumption", "None of the above"], correct: 2, explanation: "Autonomous consumption is the baseline consumption that occurs even with zero income." },
-  { q: "17. The sum of marginal propensity to consume and marginal propensity to save equals:", options: ["2", "3", "0.5", "1"], correct: 3, explanation: "By definition, MPC + MPS = 1, since any additional income is either consumed or saved." },
-  { q: "18. Which of these is not a method of measuring national income?", options: ["Product method", "Profit method", "Income method", "Expenditure method"], correct: 1, explanation: "The three standard methods are the product (output), income, and expenditure methods. 'Profit method' is not a recognized approach." },
-  { q: "19. Intermediate goods do not enter the circular flow because they remain within the ____ sector.", options: ["Business", "Government", "Household", "Export"], correct: 0, explanation: "Intermediate goods are used up within the business/production sector before reaching final consumers." },
-  { q: "20. Which of the following is an intermediate good?", options: ["Bread", "Leather", "Cloth", "Shoes"], correct: 1, explanation: "Leather is a raw input used to make shoes, making it an intermediate good. Bread, cloth as sold, and shoes are typically final goods." },
-  { q: "21. ____ are payments which are not made in return for some productive service.", options: ["Circular income payment", "Transfer payments", "Double counting payment", "Income payment"], correct: 1, explanation: "Transfer payments (e.g., pensions, subsidies) are made without any corresponding production or service in return." },
-  { q: "22. Which of the following statements is correct?", options: ["A variable is endogenous when its value is determined by forces outside the model", "A change in an exogenous variable is classified as an autonomous change", "A variable is autonomous when its values are determined by forces within the model", "A variable is exogenous when its value is determined by forces within the model"], correct: 1, explanation: "Exogenous variables are determined outside the model; a change in one is called an 'autonomous' change. The other options reverse the endogenous/exogenous definitions." },
-  { q: "23. The objective determinants of consumption are:", options: ["Quantifiable", "Non quantifiable", "Psychological", "Qualitative"], correct: 0, explanation: "Objective determinants (income, prices, interest rates) are measurable/quantifiable, as opposed to psychological (subjective) determinants." },
-  { q: "24. Given that S = -50 + 0.4Yd and C = 50 + 0.6Yd, it follows that MPS and MPC are:", options: ["-50 and 50 respectively", "0.6 and 0.4 respectively", "50 and -50 respectively", "0.4 and 0.6 respectively"], correct: 3, explanation: "MPS is the slope of the savings function (0.4), and MPC is the slope of the consumption function (0.6)." },
-  { q: "25. In stating that C = F(yd, w):", options: ["It is hypothesized that yd is more important determinant of C than w", "It is hypothesized that w is more important determinant of C than yd", "W and yd are independent variables explaining C", "yd and W are dependent variables which explain C"], correct: 0, explanation: "Disposable income (yd) is hypothesized to be the primary determinant of consumption, more important than wealth (w)." },
-  { q: "26. NNP = GNP - ____", options: ["Deduction", "Depreciation", "Investment", "Nit"], correct: 1, explanation: "Net National Product (NNP) equals Gross National Product (GNP) minus depreciation (capital consumption allowance)." },
-  { q: "27. The value of GDP at the current prevailing price is:", options: ["Real GDP", "Personal income", "Private income", "NDP"], correct: 0, explanation: "GDP valued using current prices is commonly referred to loosely as GDP at current prices (nominal GDP); among the given options, 'real GDP' is the closest standard GDP measure referenced." },
-  { q: "28. ____ are defined at a particular point of time.", options: ["Variable", "Stocks", "Flow", "Income"], correct: 1, explanation: "Stock variables (e.g., wealth, capital) are measured at a specific point in time, unlike flows which are measured over a period." },
-  { q: "29. ____ will not pass through any more stages of production.", options: ["Intermediate good", "Final good", "Semi-finished good", "Raw good"], correct: 1, explanation: "A final good has completed the production process and is ready for end use — it won't be processed further." },
-  { q: "30. Which of the following would cause business investment spending to rise?", options: ["An increase in real interest rates from 5% to 8%", "A decrease in the corporate profits tax rate from 48% to 34%", "A reduction of the investment tax credit from 10% to 2%", "Sales falling in relation to capacity from 90% to 60%"], correct: 1, explanation: "Lower corporate tax rates increase after-tax returns on investment, encouraging firms to invest more. The other options would discourage investment." },
-  { q: "31. National income can be defined as:", options: ["The market value of goods and services produced in a state", "The monetary value of all the goods and services produced in a country during an accounting period", "The company value of all goods and services", "The value of goods and services produced globally"], correct: 1, explanation: "National income is the total monetary value of all goods and services produced within a country over a given accounting period (usually a year)." },
-  { q: "32. Circular flow of income as a model:", options: ["Shows the movement of resources among states", "Shows the movement of fund", "Indicates the flow of human capital", "Shows the movement of resources between firms and households"], correct: 3, explanation: "The circular flow model specifically illustrates resource and income movement between firms and households." },
-  { q: "33. Depreciation also refers to:", options: ["Capital formation", "Capital destruction", "Net national product", "Capital consumption"], correct: 3, explanation: "Depreciation is also called 'capital consumption' — the wearing out of capital goods used in production." },
-  { q: "34. By 'stock' variable, we mean:", options: ["Total amount of existing output at a particular point in time", "The amount of current output", "Value of output produced in a given year", "Excess capacity"], correct: 0, explanation: "A stock variable is measured at one point in time (e.g., total capital stock), unlike a flow which is measured over a period." },
-  { q: "35. National income computation by income approach:", options: ["Sums the value of households' expenditure", "Sums all income received by factors of production", "Sums the value added to input", "Takes account of government intervention"], correct: 1, explanation: "The income approach adds up all income earned by factors of production — wages, rent, interest, and profit." },
-  { q: "36. What will happen to national income and size of the economy if G+I+X = T+S+M?", options: ["Shrink", "Equilibrium", "Expand", "None of the above"], correct: 1, explanation: "When total injections (G+I+X) equal total leakages (T+S+M), the economy is in equilibrium — no tendency to expand or contract." },
-  { q: "38. Which one is investment in the economy?", options: ["Building a factory", "Buying shares in stock exchange"], correct: 0 },
   {
-    q: "Which of these does not represent leakage or a withdrawal in the circular flow of income?",
-    options: ["Taxes", "Imports", "Savings", "Government expenditures"],
-    correct: 3,
-    explanation: "Government expenditures represent an injection into the circular flow, whereas taxes, imports, and savings are leakages."
+    q: "1. Which of the following is not a flow?",
+    options: ["Capital", "Income", "Investment", "Depreciation"],
+    correct: 0,
+    explanation: "Capital is a stock (measured at a point in time). Income, investment, and depreciation are all flows measured over a period."
   },
   {
-    q: "Which of these does not represent leakage or a withdrawal in the circular flow of income?",
-    options: ["Taxes", "Imports", "Savings", "Government expenditures"],
+    q: "2. Intermediate goods are those goods:",
+    options: ["Which have not yet crossed the boundary line of production", "Which are purchased by one firm from another firm for resale", "Which are not included in the estimation of national products", "All of the above"],
     correct: 3,
-    explanation: "Government expenditures represent an injection into the circular flow, whereas taxes, imports, and savings are leakages."
+    explanation: "All three statements describe characteristics of intermediate goods, so 'All of the above' is correct."
   },
   {
-    q: "What will happen to national income or size of the economy if G + I + X < T + S + M?",
+    q: "3. Study of macroeconomics is concerned with:",
+    options: ["Theory of demand", "Determination of aggregate output", "General price level", "Both (b) and (c)"],
+    correct: 3,
+    explanation: "Macroeconomics studies aggregate output and the general price level, not individual demand theory (that's microeconomics)."
+  },
+  {
+    q: "4. Which of the following is a flow?",
+    options: ["Population", "Birth and death", "Water in tank", "None of these"],
+    correct: 1,
+    explanation: "Birth and death rates are measured over a period of time, making them flows. Population and water in a tank are stocks (measured at a point in time)."
+  },
+  {
+    q: "5. Goods that are used by producers for several years and are of high value is known as:",
+    options: ["Intermediate good", "Final goods", "Capital goods", "Both (b) and (c)"],
+    correct: 3,
+    explanation: "Capital goods (machinery, equipment) are long-lasting producer goods, and they are classified as final goods since they aren't resold in the same form."
+  },
+  {
+    q: "6. In order to study the performance of an economy, macroeconomics focuses on:",
+    options: ["Economic policies and policy variables", "National income", "The public sector", "All of the above"],
+    correct: 3,
+    explanation: "Macroeconomics examines all of these together to assess overall economic performance."
+  },
+  {
+    q: "7. Goods that are used up in a single act of consumption are called:",
+    options: ["Durable consumer goods", "Semi-durable consumer goods", "Non-durable consumer goods", "Non-material consumer goods"],
+    correct: 2,
+    explanation: "Non-durable goods (like food) are consumed and used up in a single use, unlike durable goods which last over multiple uses."
+  },
+  {
+    q: "8. In a market clearing model:",
+    options: ["The price level always exists at the interaction of AD and AS", "Output is determined by the interaction of AS and AD", "A shift of AD or AS immediately changes price and/or output", "All of the above"],
+    correct: 3,
+    explanation: "In a market-clearing model, prices adjust instantly so all three statements hold true simultaneously."
+  },
+  {
+    q: "9. Aggregate expenditure is equal to:",
+    options: ["Spending by consumers on consumption goods", "Spending by businesses on investment goods", "Spending by government", "The sum of (a), (b), (c), and (d)"],
+    correct: 3,
+    explanation: "Aggregate expenditure = C + I + G (+ net exports), the sum of spending by all sectors."
+  },
+  {
+    q: "10. Circular flow of income as a model:",
+    options: ["Shows the movement of resources among states", "Shows the movement of funds", "Indicates the flow of human capital", "Shows the movement of resources between firms and households"],
+    correct: 3,
+    explanation: "The circular flow model illustrates how income and resources move between firms and households (and other sectors)."
+  },
+  {
+    q: "11. Withdrawals from the income expenditure system is known as:",
+    options: ["Investment", "Savings", "Leakages", "Consumption"],
+    correct: 2,
+    explanation: "Savings, taxes, and imports are all 'leakages' — withdrawals of spending from the circular flow."
+  },
+  {
+    q: "12. The equilibrium level of national income in a closed economy is where:",
+    options: ["MPC = APC", "Consumption equals savings", "Aggregate expenditure equals national income", "Unemployment rate is about 3% of labour force"],
+    correct: 2,
+    explanation: "Equilibrium national income occurs where planned aggregate expenditure equals national income (output)."
+  },
+  {
+    q: "13. According to the definition, autonomous expenditure will not be affected by a change in:",
+    options: ["Exchange rate", "Interest rate", "Price level", "Real GDP"],
+    correct: 3,
+    explanation: "Autonomous expenditure is, by definition, independent of the level of income/output (real GDP)."
+  },
+  {
+    q: "14. If the money value of final goods and services produced by residents of a country in a year is measured at the prices of the current year, it is called:",
+    options: ["Real GDP", "GDP at constant Price", "GDP at constant Price (dup)", "GDP at current price"],
+    correct: 3,
+    explanation: "Valuing output at current-year prices gives Nominal GDP, also called GDP at current price."
+  },
+  {
+    q: "15. Consumption in the economy depends on all except:",
+    options: ["Consumer confidence", "Interest rate", "Corporate taxes", "Income tax"],
+    correct: 2,
+    explanation: "Corporate taxes affect business profits/investment decisions, not household consumption directly. Personal income tax, confidence, and interest rates all affect consumption."
+  },
+  {
+    q: "16. ____ is a consumption that does not depend on income or disposable income.",
+    options: ["Induced consumption", "Capital consumption", "Autonomous consumption", "None of the above"],
+    correct: 2,
+    explanation: "Autonomous consumption is the baseline consumption that occurs even with zero income."
+  },
+  {
+    q: "17. The sum of marginal propensity to consume and marginal propensity to save equals:",
+    options: ["2", "3", "0.5", "1"],
+    correct: 3,
+    explanation: "By definition, MPC + MPS = 1, since any additional income is either consumed or saved."
+  },
+  {
+    q: "18. Which of these is not a method of measuring national income?",
+    options: ["Product method", "Profit method", "Income method", "Expenditure method"],
+    correct: 1,
+    explanation: "The three standard methods are the product (output), income, and expenditure methods. 'Profit method' is not a recognized approach."
+  },
+  {
+    q: "19. Intermediate goods do not enter the circular flow because they remain within the ____ sector.",
+    options: ["Business", "Government", "Household", "Export"],
+    correct: 0,
+    explanation: "Intermediate goods are used up within the business/production sector before reaching final consumers."
+  },
+  {
+    q: "20. Which of the following is an intermediate good?",
+    options: ["Bread", "Leather", "Cloth", "Shoes"],
+    correct: 1,
+    explanation: "Leather is a raw input used to make shoes, making it an intermediate good. Bread, cloth as sold, and shoes are typically final goods."
+  },
+  {
+    q: "21. ____ are payments which are not made in return for some productive service.",
+    options: ["Circular income payment", "Transfer payments", "Double counting payment", "Income payment"],
+    correct: 1,
+    explanation: "Transfer payments (e.g., pensions, subsidies) are made without any corresponding production or service in return."
+  },
+  {
+    q: "22. Which of the following statements is correct?",
+    options: ["A variable is endogenous when its value is determined by forces outside the model", "A change in an exogenous variable is classified as an autonomous change", "A variable is autonomous when its values are determined by forces within the model", "A variable is exogenous when its value is determined by forces within the model"],
+    correct: 1,
+    explanation: "Exogenous variables are determined outside the model; a change in one is called an 'autonomous' change. The other options reverse the endogenous/exogenous definitions."
+  },
+  {
+    q: "23. The objective determinants of consumption are:",
+    options: ["Quantifiable", "Non quantifiable", "Psychological", "Qualitative"],
+    correct: 0,
+    explanation: "Objective determinants (income, prices, interest rates) are measurable/quantifiable, as opposed to psychological (subjective) determinants."
+  },
+  {
+    q: "24. Given that S = -50 + 0.4Yd and C = 50 + 0.6Yd, it follows that MPS and MPC are:",
+    options: ["-50 and 50 respectively", "0.6 and 0.4 respectively", "50 and -50 respectively", "0.4 and 0.6 respectively"],
+    correct: 3,
+    explanation: "MPS is the slope of the savings function (0.4), and MPC is the slope of the consumption function (0.6)."
+  },
+  {
+    q: "25. In stating that C = F(yd, w):",
+    options: ["It is hypothesized that yd is more important determinant of C than w", "It is hypothesized that w is more important determinant of C than yd", "W and yd are independent variables explaining C", "yd and W are dependent variables which explain C"],
+    correct: 0,
+    explanation: "Disposable income (yd) is hypothesized to be the primary determinant of consumption, more important than wealth (w)."
+  },
+  {
+    q: "26. NNP = GNP - ____",
+    options: ["Deduction", "Depreciation", "Investment", "Nit"],
+    correct: 1,
+    explanation: "Net National Product (NNP) equals Gross National Product (GNP) minus depreciation (capital consumption allowance)."
+  },
+  {
+    q: "27. The value of GDP at the current prevailing price is:",
+    options: ["Real GDP", "Personal income", "Private income", "NDP"],
+    correct: 0,
+    explanation: "GDP valued using current prices is commonly referred to loosely as GDP at current prices (nominal GDP); among the given options, 'real GDP' is the closest standard GDP measure referenced."
+  },
+  {
+    q: "28. ____ are defined at a particular point of time.",
+    options: ["Variable", "Stocks", "Flow", "Income"],
+    correct: 1,
+    explanation: "Stock variables (e.g., wealth, capital) are measured at a specific point in time, unlike flows which are measured over a period."
+  },
+  {
+    q: "29. ____ will not pass through any more stages of production.",
+    options: ["Intermediate good", "Final good", "Semi-finished good", "Raw good"],
+    correct: 1,
+    explanation: "A final good has completed the production process and is ready for end use — it won't be processed further."
+  },
+  {
+    q: "30. Which of the following would cause business investment spending to rise?",
+    options: ["An increase in real interest rates from 5% to 8%", "A decrease in the corporate profits tax rate from 48% to 34%", "A reduction of the investment tax credit from 10% to 2%", "Sales falling in relation to capacity from 90% to 60%"],
+    correct: 1,
+    explanation: "Lower corporate tax rates increase after-tax returns on investment, encouraging firms to invest more. The other options would discourage investment."
+  },
+  {
+    q: "31. National income can be defined as:",
+    options: ["The market value of goods and services produced in a state", "The monetary value of all the goods and services produced in a country during an accounting period", "The company value of all goods and services", "The value of goods and services produced globally"],
+    correct: 1,
+    explanation: "National income is the total monetary value of all goods and services produced within a country over a given accounting period (usually a year)."
+  },
+  {
+    q: "32. Circular flow of income as a model:",
+    options: ["Shows the movement of resources among states", "Shows the movement of fund", "Indicates the flow of human capital", "Shows the movement of resources between firms and households"],
+    correct: 3,
+    explanation: "The circular flow model specifically illustrates resource and income movement between firms and households."
+  },
+  {
+    q: "33. Depreciation also refers to:",
+    options: ["Capital formation", "Capital destruction", "Net national product", "Capital consumption"],
+    correct: 3,
+    explanation: "Depreciation is also called 'capital consumption' — the wearing out of capital goods used in production."
+  },
+  {
+    q: "34. By 'stock' variable, we mean:",
+    options: ["Total amount of existing output at a particular point in time", "The amount of current output", "Value of output produced in a given year", "Excess capacity"],
+    correct: 0,
+    explanation: "A stock variable is measured at one point in time (e.g., total capital stock), unlike a flow which is measured over a period."
+  },
+  {
+    q: "35. National income computation by income approach:",
+    options: ["Sums the value of households' expenditure", "Sums all income received by factors of production", "Sums the value added to input", "Takes account of government intervention"],
+    correct: 1,
+    explanation: "The income approach adds up all income earned by factors of production — wages, rent, interest, and profit."
+  },
+  {
+    q: "36. What will happen to national income and size of the economy if G+I+X = T+S+M?",
+    options: ["Shrink", "Equilibrium", "Expand", "None of the above"],
+    correct: 1,
+    explanation: "When total injections (G+I+X) equal total leakages (T+S+M), the economy is in equilibrium — no tendency to expand or contract."
+  },
+  {
+    q: "38. Which one is investment in the economy?",
+    options: ["Building a factory", "Buying shares in stock exchange"],
+    correct: 0,
+    explanation: ""
   },
   {
     q: "Which of these does not represent leakage or a withdrawal in the circular flow of income?",
@@ -161,8 +331,6 @@ const quizData = [
     correct: 0,
     explanation: "Keynesian macroeconomic determination focuses on aggregate demand components."
   },
-
-  // Page 46
   {
     q: "The number of unemployed divided by the labor force equals",
     options: ["the inflation rate", "the labor force participation rate", "the unemployment rate", "the misery index"],
@@ -265,8 +433,6 @@ const quizData = [
     correct: 1,
     explanation: "HDI measures three basic dimensions: longevity (life expectancy), knowledge (education), and standard of living (GNI per capita)."
   },
-
-  // Page 47
   {
     q: "Longevity is a proxy for ___ in the Human Development Index",
     options: ["health and nutrition", "living standard", "infant mortality", "purchasing power parity"],
@@ -363,8 +529,6 @@ const quizData = [
     correct: 0,
     explanation: "Fiscal policy directly influences economic output, stabilization, and inflation."
   },
-
-  // Page 48
   {
     q: "Fiscal policy is purposeful movements in ___ designed to direct an economy",
     options: ["interest rates", "Legal structures", "Government regulations", "Government spending and taxes"],
@@ -455,8 +619,6 @@ const quizData = [
     correct: 0,
     explanation: "Monetary expansion lowers real interest rates, stimulating investment and short-run real output."
   },
-
-  // Page 49
   {
     q: "In the Keynesian model, an expansionary monetary policy will lead to",
     options: ["lower real interest rates and more investment", "lower real interest rates and lower prices", "higher real interest rates and lower prices", "higher real interest rates and higher real income"],
@@ -523,8 +685,6 @@ const quizData = [
     correct: 1,
     explanation: "Cash shortages prompt individuals to sell bonds, driving asset prices down and interest rates up."
   },
-
-  // Page 50
   {
     q: "The real interest rate is defined as:",
     options: ["the actual interest rate plus the rate of inflation", "the actual interest rate minus the rate of inflation", "the actual rate people pay rather than the advertised rate", "none of the above"],
@@ -603,8 +763,6 @@ const quizData = [
     correct: 0,
     explanation: "Adverse supply shocks lower labor productivity, reducing labor demand at every wage rate."
   },
-
-  // Page 51
   {
     q: "The marginal product of capital",
     options: ["cannot be negative", "increases as capital increases but at a decreasing rate", "increases as capital increases but at an increasing rate", "a and b are correct"],
@@ -689,8 +847,6 @@ const quizData = [
     correct: 3,
     explanation: "Harrod-Domar formula: g = s / v (where s is savings rate and v is capital-output ratio)."
   },
-
-  // Page 52
   {
     q: "Rostow's economic stages are a. the preconditions for take-off, the take-off, the drive to maturity, and the age of creative destruction b. the traditional society, the preconditions for take-off, the take-off, the drive to maturity, and the age of high mass consumption c. the preconditions for consumption, the replication, the drive to maturity, and the age of high mass consumption d. the learning curve, the age of high mass consumption, post-take-off, and the drive to maturity.",
     options: ["preconditions for take-off, take-off, drive to maturity, creative destruction", "traditional society, preconditions for take-off, take-off, drive to maturity, age of high mass consumption", "preconditions for consumption, replication, drive to maturity, age of high mass consumption", "learning curve, age of high mass consumption, post-take-off, drive to maturity"],
@@ -799,8 +955,6 @@ const quizData = [
     correct: 0,
     explanation: "Socialist planned economies rely on centralized directives and quantitative allocation commands."
   },
-
-  // Page 53
   {
     q: "Economic planning seek to achieve the following objectives except",
     options: ["Increase the rate of economic development", "Increase the general level of societal welfare", "Increase the level of unemployment", "Increase literacy level"],
@@ -928,812 +1082,222 @@ const quizData = [
     explanation: "The speculative motive centers on holding liquid cash to exploit financial investment opportunities."
   },
   {
-    id: 162,
-    question: "Rostow's economic stages are:",
-    options: [
-      "The preconditions for take-off, the take-off, the drive to maturity, and the age of creative destruction",
-      "The traditional society, the preconditions for take-off, the take-off, the drive to maturity, and the age of high mass consumption",
-      "The preconditions for consumption, the replication, the drive to maturity, and the age of high mass consumption",
-      "The learning curve, the age of high mass consumption, post-take-off, and the drive to maturity"
-    ],
-    answer: 1,
-    explanation: "Walt Rostow identified five stages of economic growth: Traditional society, Preconditions for take-off, Take-off, Drive to maturity, and Age of high mass consumption."
-  },
-  {
-    id: 163,
-    question: "Which of the following was not a classical economist?",
-    options: [
-      "Adam Smith",
-      "David Ricardo",
-      "John Stuart Mill",
-      "John Maynard Keynes"
-    ],
-    answer: 3,
-    explanation: "John Maynard Keynes belonged to the Keynesian school of economics, whereas Adam Smith, David Ricardo, and J.S. Mill were Classical economists."
-  },
-  {
-    id: 164,
-    question: "Adam Smith advocated: I. laissez-faire, II. the invisible hand, III. free-trade policy, IV. competitive markets.",
-    options: [
-      "I and II only",
-      "II and III only",
-      "I, II and III only",
-      "I, II, III and IV"
-    ],
-    answer: 3,
-    explanation: "Adam Smith promoted non-intervention (laissez-faire), market self-regulation (invisible hand), free trade, and free competition."
-  },
-  {
-    id: 165,
-    question: "A theory: I. is a systematic explanation of relationships between economic variables, II. provides a basis for policy, III. provides an explanation of factors influencing economic growth.",
-    options: [
-      "I only",
-      "I and II only",
-      "I, II and III",
-      "IV only"
-    ],
-    answer: 2,
-    explanation: "An economic theory systemically explains variable relationships, guides economic policy decisions, and models growth determinants."
-  },
-  {
-    id: 166,
-    question: "The classical growth theory, especially Ricardo's growth model, specifically emphasizes scarcity of ______ as an obstacle that will hinder growth.",
-    options: [
-      "Capital",
-      "Entrepreneur",
-      "Land",
-      "Human resources"
-    ],
-    answer: 2,
-    explanation: "David Ricardo's growth model highlights diminishing returns to agricultural land as the primary constraint on sustained economic growth."
-  },
-  {
-    id: 167,
-    question: "Planning in many LDCs has failed because detailed programs for the public sector have not been worked out and...",
-    options: [
-      "Governments depend primarily on their colonial masters",
-      "Excessive controls are used in the private sector",
-      "The brain drain cost government substantially",
-      "Monopolies dominate in the agricultural sector"
-    ],
-    answer: 1,
-    explanation: "In Less Developed Countries (LDCs), failure often stems from excessive government controls and intervention stifling private sector initiative."
-  },
-  {
-    id: 168,
-    question: "Which of these reasons is NOT why development plans are prepared?",
-    options: [
-      "To anticipate the development needs of an area",
-      "To identify relevant development issues",
-      "To identify opportunities for and constraints to development",
-      "None of the above"
-    ],
-    answer: 3,
-    explanation: "All listed choices (a, b, and c) are core objectives of preparing national or regional development plans."
-  },
-  {
-    id: 169,
-    question: "The ______ is the French system of planning which is based on the principle of decentralization in the operation and execution of the national plans.",
-    options: [
-      "Centralized planning",
-      "Totalitarian planning",
-      "Indicative planning",
-      "Demographic planning"
-    ],
-    answer: 2,
-    explanation: "Indicative planning originated in France and relies on decentralization, broad consultation, and setting target indicators rather than strict state command."
-  },
-  {
-    id: 170,
-    question: "The following are criteria for classifying countries as either developed or developing, EXCEPT:",
-    options: [
-      "Income per head",
-      "Level of infrastructural development",
-      "Availability and quantity of skilled labour",
-      "Population"
-    ],
-    answer: 3,
-    explanation: "Population size alone does not indicate development status; economic metrics like per capita income, infrastructure, and skilled labor do."
-  },
-  {
-    id: 171,
-    question: "The following are characteristics of underdeveloped economies EXCEPT:",
-    options: [
-      "High level of poverty",
-      "High level of illiteracy",
-      "High level of unemployment",
-      "High level of infrastructural development"
-    ],
-    answer: 3,
-    explanation: "High infrastructure development is a hallmark of developed economies, not underdeveloped ones."
-  },
-  {
-    id: 172,
-    question: "A sustained increase in the aggregate output or supply of goods and services is known as:",
-    options: [
-      "Economic growth",
-      "Increase in output",
-      "Economic development",
-      "Economic improvement"
-    ],
-    answer: 0,
-    explanation: "Economic growth specifically refers to a quantitative, sustained increase in real gross domestic output over time."
-  },
-  {
-    id: 173,
-    question: "The classical growth theory is primarily associated with:",
-    options: [
-      "Thomas Malthus",
-      "John Keynes",
-      "Adam Smith",
-      "David Ricardo"
-    ],
-    answer: 2,
-    explanation: "Adam Smith laid the foundation for Classical Growth Theory in 'The Wealth of Nations' (1776)."
-  },
-  {
-    id: 174,
-    question: "Policies that encourage faster economic growth include all EXCEPT:",
-    options: [
-      "Savings",
-      "Research and development",
-      "Quality education",
-      "Increase importation"
-    ],
-    answer: 3,
-    explanation: "Excessive or unmanaged reliance on imports can drain foreign reserves and suppress domestic industry, hindering domestic growth."
-  },
-  {
-    id: 175,
-    question: "Progressive changes in the social and economic structure of a country can be described as:",
-    options: [
-      "Social economic changes",
-      "Economic growth",
-      "Economic development",
-      "Societal welfare"
-    ],
-    answer: 2,
-    explanation: "Economic development encompasses both quantitative economic growth and qualitative structural/social improvements."
-  },
-  {
-    id: 176,
-    question: "Barriers to economic development include all EXCEPT:",
-    options: [
-      "A high rate of population growth",
-      "High rate of illiteracy",
-      "Political instability",
-      "High rate of infrastructural development"
-    ],
-    answer: 3,
-    explanation: "High infrastructure development facilitates economic growth and development, whereas the other options hinder it."
-  },
-  {
-    id: 177,
-    question: "Neoclassical growth theory states that:",
-    options: [
-      "Exploding population growth will bring an end to economic growth",
-      "Real GDP per person will increase as long as technology keeps advancing",
-      "A and B",
-      "None"
-    ],
-    answer: 1,
-    explanation: "Neoclassical growth theory (e.g., Solow-Swan model) asserts that long-term continuous per capita GDP growth is driven by technological progress."
-  },
-  {
-    id: 178,
-    question: "Planning in a capitalist state is known as:",
-    options: [
-      "Planning by direction",
-      "Planning by inducement",
-      "Budgeting",
-      "Coercion"
-    ],
-    answer: 1,
-    explanation: "Capitalist economies use 'planning by inducement', relying on market incentives, tax relief, and subsidies to guide economic action."
-  },
-  {
-    id: 179,
-    question: "Planning in a socialist setting is known as:",
-    options: [
-      "Planning by direction",
-      "Planning by inducement",
-      "Coercion",
-      "Budgeting"
-    ],
-    answer: 0,
-    explanation: "Socialist economies rely on 'planning by direction', where central authorities issue binding orders on production and distribution."
-  },
-  {
-    id: 180,
-    question: "Economic planning seeks to achieve the following objectives EXCEPT:",
-    options: [
-      "Increase the rate of economic development",
-      "Increase the general level of societal welfare",
-      "Increase the level of unemployment",
-      "Increase literacy level"
-    ],
-    answer: 2,
-    explanation: "Economic planning seeks to reduce unemployment, not increase it."
-  },
-  {
-    id: 181,
-    question: "Budget preparation is a typical example of:",
-    options: [
-      "Long term planning",
-      "Short term planning",
-      "Perspective planning",
-      "Medium term planning"
-    ],
-    answer: 1,
-    explanation: "Annual government budgets represent short-term financial and operational planning."
-  },
-  {
-    id: 182,
-    question: "Long term planning or perspective planning usually covers a period between:",
-    options: [
-      "5-10 years",
-      "6-10 years",
-      "7-10 years",
-      "10-30 years"
-    ],
-    answer: 3,
-    explanation: "Perspective plans are long-range strategic roadmaps usually covering 10 to 30 years."
-  },
-  {
-    id: 183,
-    question: "The benefit from international trade arises essentially from:",
-    options: [
-      "Comparative cost advantage",
-      "Absolute cost advantage",
-      "Cumulative cost advantage",
-      "Competitive advantage"
-    ],
-    answer: 0,
-    explanation: "According to David Ricardo, mutual benefits in international trade stem from exploiting comparative cost advantages."
-  },
-  {
-    id: 184,
-    question: "Which of the following is NOT an export?",
-    options: [
-      "Sales of domestic cars abroad",
-      "Purchase of foreign components",
-      "Students abroad studying in your country",
-      "Sales of financial services"
-    ],
-    answer: 1,
-    explanation: "Buying foreign components represents an import expenditure."
-  },
-  {
-    id: 185,
-    question: "Free trade is based on the principle of:",
-    options: [
-      "Comparative advantage",
-      "Comparative scale",
-      "Production advantage",
-      "Production possibility advantage"
-    ],
-    answer: 0,
-    explanation: "Unrestricted free trade allows countries to specialize where they hold a comparative advantage."
-  },
-  {
-    id: 186,
-    question: "Favorable terms of trade means that:",
-    options: [
-      "Imports are cheaper relative to export price levels",
-      "Exports are cheaper than imports",
-      "Export and import price indices are equal",
-      "Total import expenditures are greater than total export expenditure"
-    ],
-    answer: 0,
-    explanation: "Favorable terms of trade occur when export prices rise relative to import prices, meaning a unit of export buys more imports."
-  },
-  {
-    id: 187,
-    question: "When the terms of trade are unfavorable, the gains from trade for that country:",
-    options: [
-      "Are unaffected",
-      "Increase",
-      "Decrease",
-      "All of the above"
-    ],
-    answer: 2,
-    explanation: "Unfavorable terms of trade mean export prices fall relative to imports, reducing gains from trade."
-  },
-  {
-    id: 188,
-    question: "Foreign exchange payments are so called because:",
-    options: [
-      "They represent the payment of imports in foreign means of exchange",
-      "They represent the payment to us for our export",
-      "They are paid by bank in foreign countries",
-      "None of the above"
-    ],
-    answer: 0,
-    explanation: "Foreign exchange is used to settle international trade balances in foreign currency instruments."
-  },
-  {
-    id: 189,
-    question: "Economic policies appear not to work in Nigeria due to:",
-    options: [
-      "Corruption",
-      "Lack of market functioning system",
-      "Backward state of economy",
-      "All of the above"
-    ],
-    answer: 3,
-    explanation: "Institutional weakness, systemic corruption, and structural market bottlenecks collectively undermine policy implementation."
-  },
-  {
-    id: 190,
-    question: "The trade between two states within a country is called:",
-    options: [
-      "Internal trade",
-      "International trade",
-      "Intra-national trade",
-      "Domestic trade"
-    ],
-    answer: 0,
-    explanation: "Trade conducted within national borders across regional/state boundaries is termed internal or domestic trade."
-  },
-  {
-    id: 191,
-    question: "Balance of payment deficit in Nigeria is due to:",
-    options: [
-      "Mainly disequilibria in the current account",
-      "Mainly disequilibria in the capital account",
-      "Overspending of foreign reserves",
-      "Negative influence of IMF"
-    ],
-    answer: 0,
-    explanation: "Persistent import-export disparities in consumer goods and petroleum products primarily drive current account deficits."
-  },
-  {
-    id: 192,
-    question: "The theory of comparative advantage states that countries will gain if:",
-    options: [
-      "They trade in consumer goods",
-      "They trade in durable goods",
-      "They specialize and trade in the production of goods where they have comparative cost advantage",
-      "They sell more abroad than at home"
-    ],
-    answer: 2,
-    explanation: "Specializing in products with lower opportunity costs maximizes total output and trading benefits."
-  },
-  {
-    id: 193,
-    question: "The balance of payment is useful to international business people for which of the following reasons?",
-    options: [
-      "Warning of new policies that could affect a country's business climate",
-  },
-  {
     q: "Rostow's economic stages are:",
-    options: [
-      "The preconditions for take-off, the take-off, the drive to maturity, and the age of creative destruction",
-      "The traditional society, the preconditions for take-off, the take-off, the drive to maturity, and the age of high mass consumption",
-      "The preconditions for consumption, the replication, the drive to maturity, and the age of high mass consumption",
-      "The learning curve, the age of high mass consumption, post-take-off, and the drive to maturity"
-    ],
+    options: ["The preconditions for take-off, the take-off, the drive to maturity, and the age of creative destruction", "The traditional society, the preconditions for take-off, the take-off, the drive to maturity, and the age of high mass consumption", "The preconditions for consumption, the replication, the drive to maturity, and the age of high mass consumption", "The learning curve, the age of high mass consumption, post-take-off, and the drive to maturity"],
     correct: 1,
     explanation: "Walt Rostow identified five stages of economic growth: Traditional society, Preconditions for take-off, Take-off, Drive to maturity, and Age of high mass consumption."
   },
   {
-    q: "Which of the following was not a classical economist?",
-    options: [
-      "Adam Smith",
-      "David Ricardo",
-      "John Stuart Mill",
-      "John Maynard Keynes"
-    ],
-    correct: 3,
-    explanation: "John Maynard Keynes belonged to the Keynesian school of economics, whereas Adam Smith, David Ricardo, and J.S. Mill were Classical economists."
-  },
-  {
     q: "Adam Smith advocated: I. laissez-faire, II. the invisible hand, III. free-trade policy, IV. competitive markets.",
-    options: [
-      "I and II only",
-      "II and III only",
-      "I, II and III only",
-      "I, II, III and IV"
-    ],
+    options: ["I and II only", "II and III only", "I, II and III only", "I, II, III and IV"],
     correct: 3,
     explanation: "Adam Smith promoted non-intervention (laissez-faire), market self-regulation (invisible hand), free trade, and free competition."
   },
   {
     q: "A theory: I. is a systematic explanation of relationships between economic variables, II. provides a basis for policy, III. provides an explanation of factors influencing economic growth.",
-    options: [
-      "I only",
-      "I and II only",
-      "I, II and III",
-      "IV only"
-    ],
+    options: ["I only", "I and II only", "I, II and III", "IV only"],
     correct: 2,
     explanation: "An economic theory systemically explains variable relationships, guides economic policy decisions, and models growth determinants."
   },
   {
     q: "The classical growth theory, especially Ricardo's growth model, specifically emphasizes scarcity of ______ as an obstacle that will hinder growth.",
-    options: [
-      "Capital",
-      "Entrepreneur",
-      "Land",
-      "Human resources"
-    ],
+    options: ["Capital", "Entrepreneur", "Land", "Human resources"],
     correct: 2,
     explanation: "David Ricardo's growth model highlights diminishing returns to agricultural land as the primary constraint on sustained economic growth."
   },
   {
-    q: "Planning in many LDCs has failed because detailed programs for the public sector have not been worked out and...",
-    options: [
-      "Governments depend primarily on their colonial masters",
-      "Excessive controls are used in the private sector",
-      "The brain drain cost government substantially",
-      "Monopolies dominate in the agricultural sector"
-    ],
-    correct: 1,
-    explanation: "In Less Developed Countries (LDCs), failure often stems from excessive government controls and intervention stifling private sector initiative."
-  },
-  {
     q: "Which of these reasons is NOT why development plans are prepared?",
-    options: [
-      "To anticipate the development needs of an area",
-      "To identify relevant development issues",
-      "To identify opportunities for and constraints to development",
-      "None of the above"
-    ],
+    options: ["To anticipate the development needs of an area", "To identify relevant development issues", "To identify opportunities for and constraints to development", "None of the above"],
     correct: 3,
     explanation: "All listed choices (a, b, and c) are core objectives of preparing national or regional development plans."
   },
   {
     q: "The ______ is the French system of planning which is based on the principle of decentralization in the operation and execution of the national plans.",
-    options: [
-      "Centralized planning",
-      "Totalitarian planning",
-      "Indicative planning",
-      "Demographic planning"
-    ],
+    options: ["Centralized planning", "Totalitarian planning", "Indicative planning", "Demographic planning"],
     correct: 2,
     explanation: "Indicative planning originated in France and relies on decentralization, broad consultation, and setting target indicators rather than strict state command."
   },
   {
     q: "The following are criteria for classifying countries as either developed or developing, EXCEPT:",
-    options: [
-      "Income per head",
-      "Level of infrastructural development",
-      "Availability and quantity of skilled labour",
-      "Population"
-    ],
+    options: ["Income per head", "Level of infrastructural development", "Availability and quantity of skilled labour", "Population"],
     correct: 3,
     explanation: "Population size alone does not indicate development status; economic metrics like per capita income, infrastructure, and skilled labor do."
   },
   {
     q: "The following are characteristics of underdeveloped economies EXCEPT:",
-    options: [
-      "High level of poverty",
-      "High level of illiteracy",
-      "High level of unemployment",
-      "High level of infrastructural development"
-    ],
+    options: ["High level of poverty", "High level of illiteracy", "High level of unemployment", "High level of infrastructural development"],
     correct: 3,
     explanation: "High infrastructure development is a hallmark of developed economies, not underdeveloped ones."
   },
   {
     q: "A sustained increase in the aggregate output or supply of goods and services is known as:",
-    options: [
-      "Economic growth",
-      "Increase in output",
-      "Economic development",
-      "Economic improvement"
-    ],
+    options: ["Economic growth", "Increase in output", "Economic development", "Economic improvement"],
     correct: 0,
     explanation: "Economic growth specifically refers to a quantitative, sustained increase in real gross domestic output over time."
   },
   {
     q: "The classical growth theory is primarily associated with:",
-    options: [
-      "Thomas Malthus",
-      "John Keynes",
-      "Adam Smith",
-      "David Ricardo"
-    ],
+    options: ["Thomas Malthus", "John Keynes", "Adam Smith", "David Ricardo"],
     correct: 2,
     explanation: "Adam Smith laid the foundation for Classical Growth Theory in 'The Wealth of Nations' (1776)."
   },
   {
     q: "Policies that encourage faster economic growth include all EXCEPT:",
-    options: [
-      "Savings",
-      "Research and development",
-      "Quality education",
-      "Increase importation"
-    ],
+    options: ["Savings", "Research and development", "Quality education", "Increase importation"],
     correct: 3,
     explanation: "Excessive or unmanaged reliance on imports can drain foreign reserves and suppress domestic industry, hindering domestic growth."
   },
   {
     q: "Progressive changes in the social and economic structure of a country can be described as:",
-    options: [
-      "Social economic changes",
-      "Economic growth",
-      "Economic development",
-      "Societal welfare"
-    ],
+    options: ["Social economic changes", "Economic growth", "Economic development", "Societal welfare"],
     correct: 2,
     explanation: "Economic development encompasses both quantitative economic growth and qualitative structural/social improvements."
   },
   {
     q: "Barriers to economic development include all EXCEPT:",
-    options: [
-      "A high rate of population growth",
-      "High rate of illiteracy",
-      "Political instability",
-      "High rate of infrastructural development"
-    ],
+    options: ["A high rate of population growth", "High rate of illiteracy", "Political instability", "High rate of infrastructural development"],
     correct: 3,
     explanation: "High infrastructure development facilitates economic growth and development, whereas the other options hinder it."
   },
   {
     q: "Neoclassical growth theory states that:",
-    options: [
-      "Exploding population growth will bring an end to economic growth",
-      "Real GDP per person will increase as long as technology keeps advancing",
-      "A and B",
-      "None"
-    ],
+    options: ["Exploding population growth will bring an end to economic growth", "Real GDP per person will increase as long as technology keeps advancing", "A and B", "None"],
     correct: 1,
     explanation: "Neoclassical growth theory (e.g., Solow-Swan model) asserts that long-term continuous per capita GDP growth is driven by technological progress."
   },
   {
     q: "Planning in a capitalist state is known as:",
-    options: [
-      "Planning by direction",
-      "Planning by inducement",
-      "Budgeting",
-      "Coercion"
-    ],
+    options: ["Planning by direction", "Planning by inducement", "Budgeting", "Coercion"],
     correct: 1,
     explanation: "Capitalist economies use 'planning by inducement', relying on market incentives, tax relief, and subsidies to guide economic action."
   },
   {
     q: "Planning in a socialist setting is known as:",
-    options: [
-      "Planning by direction",
-      "Planning by inducement",
-      "Coercion",
-      "Budgeting"
-    ],
+    options: ["Planning by direction", "Planning by inducement", "Coercion", "Budgeting"],
     correct: 0,
     explanation: "Socialist economies rely on 'planning by direction', where central authorities issue binding orders on production and distribution."
   },
   {
     q: "Economic planning seeks to achieve the following objectives EXCEPT:",
-    options: [
-      "Increase the rate of economic development",
-      "Increase the general level of societal welfare",
-      "Increase the level of unemployment",
-      "Increase literacy level"
-    ],
+    options: ["Increase the rate of economic development", "Increase the general level of societal welfare", "Increase the level of unemployment", "Increase literacy level"],
     correct: 2,
     explanation: "Economic planning seeks to reduce unemployment, not increase it."
   },
   {
     q: "Budget preparation is a typical example of:",
-    options: [
-      "Long term planning",
-      "Short term planning",
-      "Perspective planning",
-      "Medium term planning"
-    ],
+    options: ["Long term planning", "Short term planning", "Perspective planning", "Medium term planning"],
     correct: 1,
     explanation: "Annual government budgets represent short-term financial and operational planning."
   },
   {
     q: "Long term planning or perspective planning usually covers a period between:",
-    options: [
-      "5-10 years",
-      "6-10 years",
-      "7-10 years",
-      "10-30 years"
-    ],
+    options: ["5-10 years", "6-10 years", "7-10 years", "10-30 years"],
     correct: 3,
     explanation: "Perspective plans are long-range strategic roadmaps usually covering 10 to 30 years."
   },
   {
     q: "The benefit from international trade arises essentially from:",
-    options: [
-      "Comparative cost advantage",
-      "Absolute cost advantage",
-      "Cumulative cost advantage",
-      "Competitive advantage"
-    ],
+    options: ["Comparative cost advantage", "Absolute cost advantage", "Cumulative cost advantage", "Competitive advantage"],
     correct: 0,
     explanation: "According to David Ricardo, mutual benefits in international trade stem from exploiting comparative cost advantages."
   },
   {
     q: "Which of the following is NOT an export?",
-    options: [
-      "Sales of domestic cars abroad",
-      "Purchase of foreign components",
-      "Students abroad studying in your country",
-      "Sales of financial services"
-    ],
+    options: ["Sales of domestic cars abroad", "Purchase of foreign components", "Students abroad studying in your country", "Sales of financial services"],
     correct: 1,
     explanation: "Buying foreign components represents an import expenditure."
   },
   {
     q: "Free trade is based on the principle of:",
-    options: [
-      "Comparative advantage",
-      "Comparative scale",
-      "Production advantage",
-      "Production possibility advantage"
-    ],
+    options: ["Comparative advantage", "Comparative scale", "Production advantage", "Production possibility advantage"],
     correct: 0,
     explanation: "Unrestricted free trade allows countries to specialize where they hold a comparative advantage."
   },
   {
     q: "Favorable terms of trade means that:",
-    options: [
-      "Imports are cheaper relative to export price levels",
-      "Exports are cheaper than imports",
-      "Export and import price indices are equal",
-      "Total import expenditures are greater than total export expenditure"
-    ],
+    options: ["Imports are cheaper relative to export price levels", "Exports are cheaper than imports", "Export and import price indices are equal", "Total import expenditures are greater than total export expenditure"],
     correct: 0,
     explanation: "Favorable terms of trade occur when export prices rise relative to import prices, meaning a unit of export buys more imports."
   },
   {
     q: "When the terms of trade are unfavorable, the gains from trade for that country:",
-    options: [
-      "Are unaffected",
-      "Increase",
-      "Decrease",
-      "All of the above"
-    ],
+    options: ["Are unaffected", "Increase", "Decrease", "All of the above"],
     correct: 2,
     explanation: "Unfavorable terms of trade mean export prices fall relative to imports, reducing gains from trade."
   },
   {
     q: "Foreign exchange payments are so called because:",
-    options: [
-      "They represent the payment of imports in foreign means of exchange",
-      "They represent the payment to us for our export",
-      "They are paid by bank in foreign countries",
-      "None of the above"
-    ],
+    options: ["They represent the payment of imports in foreign means of exchange", "They represent the payment to us for our export", "They are paid by bank in foreign countries", "None of the above"],
     correct: 0,
     explanation: "Foreign exchange is used to settle international trade balances in foreign currency instruments."
   },
   {
     q: "Economic policies appear not to work in Nigeria due to:",
-    options: [
-      "Corruption",
-      "Lack of market functioning system",
-      "Backward state of economy",
-      "All of the above"
-    ],
+    options: ["Corruption", "Lack of market functioning system", "Backward state of economy", "All of the above"],
     correct: 3,
     explanation: "Institutional weakness, systemic corruption, and structural market bottlenecks collectively undermine policy implementation."
   },
   {
     q: "The trade between two states within a country is called:",
-    options: [
-      "Internal trade",
-      "International trade",
-      "Intra-national trade",
-      "Domestic trade"
-    ],
+    options: ["Internal trade", "International trade", "Intra-national trade", "Domestic trade"],
     correct: 0,
     explanation: "Trade conducted within national borders across regional/state boundaries is termed internal or domestic trade."
   },
   {
     q: "Balance of payment deficit in Nigeria is due to:",
-    options: [
-      "Mainly disequilibria in the current account",
-      "Mainly disequilibria in the capital account",
-      "Overspending of foreign reserves",
-      "Negative influence of IMF"
-    ],
+    options: ["Mainly disequilibria in the current account", "Mainly disequilibria in the capital account", "Overspending of foreign reserves", "Negative influence of IMF"],
     correct: 0,
     explanation: "Persistent import-export disparities in consumer goods and petroleum products primarily drive current account deficits."
   },
   {
     q: "The theory of comparative advantage states that countries will gain if:",
-    options: [
-      "They trade in consumer goods",
-      "They trade in durable goods",
-      "They specialize and trade in the production of goods where they have comparative cost advantage",
-      "They sell more abroad than at home"
-    ],
+    options: ["They trade in consumer goods", "They trade in durable goods", "They specialize and trade in the production of goods where they have comparative cost advantage", "They sell more abroad than at home"],
     correct: 2,
     explanation: "Specializing in products with lower opportunity costs maximizes total output and trading benefits."
   },
   {
-    q: "The balance of payment is useful to international business people for which of the following reasons?",
-    options: [
-      "Warning of new policies that could affect a country's business climate",
-      "Indicating stability in a country's foreign policy",
-      "Signaling increased riskiness of lending to countries",
-      "Predicting future technological changes"
-    ],
-    correct: 0,
-    explanation: "BOP data highlights currency exposure, potential exchange controls, or import restrictions that affect commercial strategy."
-  },
-  {
     q: "Money held for day-to-day transactions is the ______ demand for money.",
-    options: [
-      "Transactionary",
-      "Precautionary",
-      "Speculative",
-      "None of the above"
-    ],
+    options: ["Transactionary", "Precautionary", "Speculative", "None of the above"],
     correct: 0,
     explanation: "Transactions demand for money covers routine everyday purchases and expenses."
   },
   {
     q: "Money held for contingency or emergency sake is the ______ demand for money.",
-    options: [
-      "Precautionary",
-      "Speculative",
-      "Transactionary",
-      "None of the above"
-    ],
+    options: ["Precautionary", "Speculative", "Transactionary", "None of the above"],
     correct: 0,
     explanation: "Precautionary demand provides a buffer against unforeseen events and financial contingencies."
   },
   {
     q: "Which function of money solves the problem of double coincidence of wants inherent in barter?",
-    options: [
-      "Unit of account",
-      "Store of value",
-      "Medium of exchange",
-      "Deferred payment"
-    ],
+    options: ["Unit of account", "Store of value", "Medium of exchange", "Deferred payment"],
     correct: 2,
     explanation: "As a medium of exchange, money eliminates the need for both parties to desire each other's physical goods directly."
   },
   {
     q: "Stability is one of the key desirable features of money.",
-    options: [
-      "True",
-      "False",
-      "A and B",
-      "None of the above"
-    ],
+    options: ["True", "False", "A and B", "None of the above"],
     correct: 0,
     explanation: "Stability in purchasing value is essential for money to retain trust as a store of value and unit of account."
   },
   {
     q: "The speculative motive of demand for money is primarily affected by:",
-    options: [
-      "Income",
-      "Price",
-      "Interest rate",
-      "A and B"
-    ],
+    options: ["Income", "Price", "Interest rate", "A and B"],
     correct: 2,
     explanation: "Keynesian economic theory shows speculative money demand responds inversely to prevailing market interest rates."
   },
   {
     q: "Money supply is exogenously determined by the central monetary authority.",
-    options: [
-      "True",
-      "False",
-      "A and B",
-      "None of the above"
-    ],
+    options: ["True", "False", "A and B", "None of the above"],
     correct: 0,
     explanation: "In traditional macroeconomic models, the central bank directly sets and controls the overall money supply exogenously."
   },
   {
     q: "Money held for the sake of taking advantage of favorable investment or business opportunities is called:",
-    options: [
-      "Transactionary",
-      "Speculative",
-      "Precautionary",
-      "None of the above"
-    ],
+    options: ["Transactionary", "Speculative", "Precautionary", "None of the above"],
     correct: 1,
     explanation: "Speculative demand holds liquid cash to buy financial assets when prices/interest rates become favorable."
   }
+];
 
 let currentIndex = 0;
 let userAnswers = new Array(quizData.length).fill(null);
@@ -1831,4 +1395,3 @@ nextBtn.addEventListener('click', () => {
 });
 
 renderQuestion();
-

@@ -1292,98 +1292,436 @@ const quizData = [
     question: "The balance of payment is useful to international business people for which of the following reasons?",
     options: [
       "Warning of new policies that could affect a country's business climate",
+  },
+  {
+    q: "Rostow's economic stages are:",
+    options: [
+      "The preconditions for take-off, the take-off, the drive to maturity, and the age of creative destruction",
+      "The traditional society, the preconditions for take-off, the take-off, the drive to maturity, and the age of high mass consumption",
+      "The preconditions for consumption, the replication, the drive to maturity, and the age of high mass consumption",
+      "The learning curve, the age of high mass consumption, post-take-off, and the drive to maturity"
+    ],
+    correct: 1,
+    explanation: "Walt Rostow identified five stages of economic growth: Traditional society, Preconditions for take-off, Take-off, Drive to maturity, and Age of high mass consumption."
+  },
+  {
+    q: "Which of the following was not a classical economist?",
+    options: [
+      "Adam Smith",
+      "David Ricardo",
+      "John Stuart Mill",
+      "John Maynard Keynes"
+    ],
+    correct: 3,
+    explanation: "John Maynard Keynes belonged to the Keynesian school of economics, whereas Adam Smith, David Ricardo, and J.S. Mill were Classical economists."
+  },
+  {
+    q: "Adam Smith advocated: I. laissez-faire, II. the invisible hand, III. free-trade policy, IV. competitive markets.",
+    options: [
+      "I and II only",
+      "II and III only",
+      "I, II and III only",
+      "I, II, III and IV"
+    ],
+    correct: 3,
+    explanation: "Adam Smith promoted non-intervention (laissez-faire), market self-regulation (invisible hand), free trade, and free competition."
+  },
+  {
+    q: "A theory: I. is a systematic explanation of relationships between economic variables, II. provides a basis for policy, III. provides an explanation of factors influencing economic growth.",
+    options: [
+      "I only",
+      "I and II only",
+      "I, II and III",
+      "IV only"
+    ],
+    correct: 2,
+    explanation: "An economic theory systemically explains variable relationships, guides economic policy decisions, and models growth determinants."
+  },
+  {
+    q: "The classical growth theory, especially Ricardo's growth model, specifically emphasizes scarcity of ______ as an obstacle that will hinder growth.",
+    options: [
+      "Capital",
+      "Entrepreneur",
+      "Land",
+      "Human resources"
+    ],
+    correct: 2,
+    explanation: "David Ricardo's growth model highlights diminishing returns to agricultural land as the primary constraint on sustained economic growth."
+  },
+  {
+    q: "Planning in many LDCs has failed because detailed programs for the public sector have not been worked out and...",
+    options: [
+      "Governments depend primarily on their colonial masters",
+      "Excessive controls are used in the private sector",
+      "The brain drain cost government substantially",
+      "Monopolies dominate in the agricultural sector"
+    ],
+    correct: 1,
+    explanation: "In Less Developed Countries (LDCs), failure often stems from excessive government controls and intervention stifling private sector initiative."
+  },
+  {
+    q: "Which of these reasons is NOT why development plans are prepared?",
+    options: [
+      "To anticipate the development needs of an area",
+      "To identify relevant development issues",
+      "To identify opportunities for and constraints to development",
+      "None of the above"
+    ],
+    correct: 3,
+    explanation: "All listed choices (a, b, and c) are core objectives of preparing national or regional development plans."
+  },
+  {
+    q: "The ______ is the French system of planning which is based on the principle of decentralization in the operation and execution of the national plans.",
+    options: [
+      "Centralized planning",
+      "Totalitarian planning",
+      "Indicative planning",
+      "Demographic planning"
+    ],
+    correct: 2,
+    explanation: "Indicative planning originated in France and relies on decentralization, broad consultation, and setting target indicators rather than strict state command."
+  },
+  {
+    q: "The following are criteria for classifying countries as either developed or developing, EXCEPT:",
+    options: [
+      "Income per head",
+      "Level of infrastructural development",
+      "Availability and quantity of skilled labour",
+      "Population"
+    ],
+    correct: 3,
+    explanation: "Population size alone does not indicate development status; economic metrics like per capita income, infrastructure, and skilled labor do."
+  },
+  {
+    q: "The following are characteristics of underdeveloped economies EXCEPT:",
+    options: [
+      "High level of poverty",
+      "High level of illiteracy",
+      "High level of unemployment",
+      "High level of infrastructural development"
+    ],
+    correct: 3,
+    explanation: "High infrastructure development is a hallmark of developed economies, not underdeveloped ones."
+  },
+  {
+    q: "A sustained increase in the aggregate output or supply of goods and services is known as:",
+    options: [
+      "Economic growth",
+      "Increase in output",
+      "Economic development",
+      "Economic improvement"
+    ],
+    correct: 0,
+    explanation: "Economic growth specifically refers to a quantitative, sustained increase in real gross domestic output over time."
+  },
+  {
+    q: "The classical growth theory is primarily associated with:",
+    options: [
+      "Thomas Malthus",
+      "John Keynes",
+      "Adam Smith",
+      "David Ricardo"
+    ],
+    correct: 2,
+    explanation: "Adam Smith laid the foundation for Classical Growth Theory in 'The Wealth of Nations' (1776)."
+  },
+  {
+    q: "Policies that encourage faster economic growth include all EXCEPT:",
+    options: [
+      "Savings",
+      "Research and development",
+      "Quality education",
+      "Increase importation"
+    ],
+    correct: 3,
+    explanation: "Excessive or unmanaged reliance on imports can drain foreign reserves and suppress domestic industry, hindering domestic growth."
+  },
+  {
+    q: "Progressive changes in the social and economic structure of a country can be described as:",
+    options: [
+      "Social economic changes",
+      "Economic growth",
+      "Economic development",
+      "Societal welfare"
+    ],
+    correct: 2,
+    explanation: "Economic development encompasses both quantitative economic growth and qualitative structural/social improvements."
+  },
+  {
+    q: "Barriers to economic development include all EXCEPT:",
+    options: [
+      "A high rate of population growth",
+      "High rate of illiteracy",
+      "Political instability",
+      "High rate of infrastructural development"
+    ],
+    correct: 3,
+    explanation: "High infrastructure development facilitates economic growth and development, whereas the other options hinder it."
+  },
+  {
+    q: "Neoclassical growth theory states that:",
+    options: [
+      "Exploding population growth will bring an end to economic growth",
+      "Real GDP per person will increase as long as technology keeps advancing",
+      "A and B",
+      "None"
+    ],
+    correct: 1,
+    explanation: "Neoclassical growth theory (e.g., Solow-Swan model) asserts that long-term continuous per capita GDP growth is driven by technological progress."
+  },
+  {
+    q: "Planning in a capitalist state is known as:",
+    options: [
+      "Planning by direction",
+      "Planning by inducement",
+      "Budgeting",
+      "Coercion"
+    ],
+    correct: 1,
+    explanation: "Capitalist economies use 'planning by inducement', relying on market incentives, tax relief, and subsidies to guide economic action."
+  },
+  {
+    q: "Planning in a socialist setting is known as:",
+    options: [
+      "Planning by direction",
+      "Planning by inducement",
+      "Coercion",
+      "Budgeting"
+    ],
+    correct: 0,
+    explanation: "Socialist economies rely on 'planning by direction', where central authorities issue binding orders on production and distribution."
+  },
+  {
+    q: "Economic planning seeks to achieve the following objectives EXCEPT:",
+    options: [
+      "Increase the rate of economic development",
+      "Increase the general level of societal welfare",
+      "Increase the level of unemployment",
+      "Increase literacy level"
+    ],
+    correct: 2,
+    explanation: "Economic planning seeks to reduce unemployment, not increase it."
+  },
+  {
+    q: "Budget preparation is a typical example of:",
+    options: [
+      "Long term planning",
+      "Short term planning",
+      "Perspective planning",
+      "Medium term planning"
+    ],
+    correct: 1,
+    explanation: "Annual government budgets represent short-term financial and operational planning."
+  },
+  {
+    q: "Long term planning or perspective planning usually covers a period between:",
+    options: [
+      "5-10 years",
+      "6-10 years",
+      "7-10 years",
+      "10-30 years"
+    ],
+    correct: 3,
+    explanation: "Perspective plans are long-range strategic roadmaps usually covering 10 to 30 years."
+  },
+  {
+    q: "The benefit from international trade arises essentially from:",
+    options: [
+      "Comparative cost advantage",
+      "Absolute cost advantage",
+      "Cumulative cost advantage",
+      "Competitive advantage"
+    ],
+    correct: 0,
+    explanation: "According to David Ricardo, mutual benefits in international trade stem from exploiting comparative cost advantages."
+  },
+  {
+    q: "Which of the following is NOT an export?",
+    options: [
+      "Sales of domestic cars abroad",
+      "Purchase of foreign components",
+      "Students abroad studying in your country",
+      "Sales of financial services"
+    ],
+    correct: 1,
+    explanation: "Buying foreign components represents an import expenditure."
+  },
+  {
+    q: "Free trade is based on the principle of:",
+    options: [
+      "Comparative advantage",
+      "Comparative scale",
+      "Production advantage",
+      "Production possibility advantage"
+    ],
+    correct: 0,
+    explanation: "Unrestricted free trade allows countries to specialize where they hold a comparative advantage."
+  },
+  {
+    q: "Favorable terms of trade means that:",
+    options: [
+      "Imports are cheaper relative to export price levels",
+      "Exports are cheaper than imports",
+      "Export and import price indices are equal",
+      "Total import expenditures are greater than total export expenditure"
+    ],
+    correct: 0,
+    explanation: "Favorable terms of trade occur when export prices rise relative to import prices, meaning a unit of export buys more imports."
+  },
+  {
+    q: "When the terms of trade are unfavorable, the gains from trade for that country:",
+    options: [
+      "Are unaffected",
+      "Increase",
+      "Decrease",
+      "All of the above"
+    ],
+    correct: 2,
+    explanation: "Unfavorable terms of trade mean export prices fall relative to imports, reducing gains from trade."
+  },
+  {
+    q: "Foreign exchange payments are so called because:",
+    options: [
+      "They represent the payment of imports in foreign means of exchange",
+      "They represent the payment to us for our export",
+      "They are paid by bank in foreign countries",
+      "None of the above"
+    ],
+    correct: 0,
+    explanation: "Foreign exchange is used to settle international trade balances in foreign currency instruments."
+  },
+  {
+    q: "Economic policies appear not to work in Nigeria due to:",
+    options: [
+      "Corruption",
+      "Lack of market functioning system",
+      "Backward state of economy",
+      "All of the above"
+    ],
+    correct: 3,
+    explanation: "Institutional weakness, systemic corruption, and structural market bottlenecks collectively undermine policy implementation."
+  },
+  {
+    q: "The trade between two states within a country is called:",
+    options: [
+      "Internal trade",
+      "International trade",
+      "Intra-national trade",
+      "Domestic trade"
+    ],
+    correct: 0,
+    explanation: "Trade conducted within national borders across regional/state boundaries is termed internal or domestic trade."
+  },
+  {
+    q: "Balance of payment deficit in Nigeria is due to:",
+    options: [
+      "Mainly disequilibria in the current account",
+      "Mainly disequilibria in the capital account",
+      "Overspending of foreign reserves",
+      "Negative influence of IMF"
+    ],
+    correct: 0,
+    explanation: "Persistent import-export disparities in consumer goods and petroleum products primarily drive current account deficits."
+  },
+  {
+    q: "The theory of comparative advantage states that countries will gain if:",
+    options: [
+      "They trade in consumer goods",
+      "They trade in durable goods",
+      "They specialize and trade in the production of goods where they have comparative cost advantage",
+      "They sell more abroad than at home"
+    ],
+    correct: 2,
+    explanation: "Specializing in products with lower opportunity costs maximizes total output and trading benefits."
+  },
+  {
+    q: "The balance of payment is useful to international business people for which of the following reasons?",
+    options: [
+      "Warning of new policies that could affect a country's business climate",
       "Indicating stability in a country's foreign policy",
       "Signaling increased riskiness of lending to countries",
       "Predicting future technological changes"
     ],
-    answer: 0,
+    correct: 0,
     explanation: "BOP data highlights currency exposure, potential exchange controls, or import restrictions that affect commercial strategy."
   },
   {
-    id: 194,
-    question: "Money held for day-to-day transactions is the ______ demand for money.",
+    q: "Money held for day-to-day transactions is the ______ demand for money.",
     options: [
       "Transactionary",
       "Precautionary",
       "Speculative",
       "None of the above"
     ],
-    answer: 0,
+    correct: 0,
     explanation: "Transactions demand for money covers routine everyday purchases and expenses."
   },
   {
-    id: 195,
-    question: "Money held for contingency or emergency sake is the ______ demand for money.",
+    q: "Money held for contingency or emergency sake is the ______ demand for money.",
     options: [
       "Precautionary",
       "Speculative",
       "Transactionary",
       "None of the above"
     ],
-    answer: 0,
+    correct: 0,
     explanation: "Precautionary demand provides a buffer against unforeseen events and financial contingencies."
   },
   {
-    id: 196,
-    question: "Which function of money solves the problem of double coincidence of wants inherent in barter?",
+    q: "Which function of money solves the problem of double coincidence of wants inherent in barter?",
     options: [
       "Unit of account",
       "Store of value",
       "Medium of exchange",
       "Deferred payment"
     ],
-    answer: 2,
+    correct: 2,
     explanation: "As a medium of exchange, money eliminates the need for both parties to desire each other's physical goods directly."
   },
   {
-    id: 197,
-    question: "Stability is one of the key desirable features of money.",
+    q: "Stability is one of the key desirable features of money.",
     options: [
       "True",
       "False",
       "A and B",
       "None of the above"
     ],
-    answer: 0,
+    correct: 0,
     explanation: "Stability in purchasing value is essential for money to retain trust as a store of value and unit of account."
   },
   {
-    id: 198,
-    question: "The speculative motive of demand for money is primarily affected by:",
+    q: "The speculative motive of demand for money is primarily affected by:",
     options: [
       "Income",
       "Price",
       "Interest rate",
       "A and B"
     ],
-    answer: 2,
+    correct: 2,
     explanation: "Keynesian economic theory shows speculative money demand responds inversely to prevailing market interest rates."
   },
   {
-    id: 199,
-    question: "Money supply is exogenously determined by the central monetary authority.",
+    q: "Money supply is exogenously determined by the central monetary authority.",
     options: [
       "True",
       "False",
       "A and B",
       "None of the above"
     ],
-    answer: 0,
+    correct: 0,
     explanation: "In traditional macroeconomic models, the central bank directly sets and controls the overall money supply exogenously."
   },
   {
-    id: 200,
-    question: "Money held for the sake of taking advantage of favorable investment or business opportunities is called:",
+    q: "Money held for the sake of taking advantage of favorable investment or business opportunities is called:",
     options: [
       "Transactionary",
       "Speculative",
       "Precautionary",
       "None of the above"
     ],
-    answer: 1,
+    correct: 1,
     explanation: "Speculative demand holds liquid cash to buy financial assets when prices/interest rates become favorable."
   }
-];
 
 let currentIndex = 0;
 let userAnswers = new Array(quizData.length).fill(null);

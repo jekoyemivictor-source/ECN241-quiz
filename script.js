@@ -39,6 +39,7 @@ const quizData = [
   { q: "36. What will happen to national income and size of the economy if G+I+X = T+S+M?", options: ["Shrink", "Equilibrium", "Expand", "None of the above"], correct: 1, explanation: "When total injections (G+I+X) equal total leakages (T+S+M), the economy is in equilibrium — no tendency to expand or contract." },
   { q: "37. A four sector economy is referred to as:", options: ["Injection", "Open economy", "Simple economy", "Closed economy"], correct: 1, explanation: "A four-sector economy includes households, firms, government, and the foreign sector — this makes it an open economy." },
   { q: "38. Which one is investment in the economy?", options: ["Building a factory", "Buying shares in stock exchange", "Depositing money in housing society", "Depositing money in the bank"], correct: 0, explanation: "In economics, 'investment' means adding to productive capital (like building a factory), not financial transactions like buying shares or saving money in a bank." }
+  ]:
   const extendedQuizData = [
   // Page 44
   {

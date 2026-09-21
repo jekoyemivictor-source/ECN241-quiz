@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECN 241 Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div class="quiz-container">
+    <header>
+      <h1>ECN 241 Practice Quiz</h1>
+      <p class="subtitle">Batch 1 &middot; Questions 1&ndash;38</p>
+    </header>
+
+    <div class="progress-wrap">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span class="progress-label" id="progressLabel">0 / 0 answered</span>
+    </div>
+
+    <div class="question-card">
+      <p class="question-number" id="questionNumber"></p>
+      <h2 class="question-text" id="questionText"></h2>
+      <div class="options" id="optionsContainer"></div>
+      <div class="explanation" id="explanationBox"></div>
+    </div>
+
+    <div class="nav-buttons">
+      <button id="prevBtn" class="nav-btn">&larr; Previous</button>
+      <span id="scoreDisplay" class="score-display"></span>
+      <button id="nextBtn" class="nav-btn">Next &rarr;</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

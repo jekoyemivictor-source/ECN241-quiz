@@ -904,7 +904,7 @@ const quizData = [
     explanation: "Keynesian speculative demand for holding cash balances is inversely related to market interest rates."
   },
   {
-    q: "Money supply is exogenous sly determine a. True b. False c. A and B d. Nine of the above",
+    q: "Money supply is exogenous sly determine",
     options: ["True", "False", "A and B", "None of the above"],
     correct: 0,
     explanation: "In standard monetary theory models, money supply is treated as exogenously set by the central bank."
@@ -914,7 +914,7 @@ const quizData = [
     options: ["Transactionary", "Speculative", "Precautionary", "None of the above"],
     correct: 1,
     explanation: "The speculative motive centers on holding liquid cash to exploit financial investment opportunities."
-  const questionsList = [
+  },
   {
     id: 162,
     question: "Rostow's economic stages are:",

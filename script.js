@@ -38,10 +38,17 @@ const quizData = [
   { q: "35. National income computation by income approach:", options: ["Sums the value of households' expenditure", "Sums all income received by factors of production", "Sums the value added to input", "Takes account of government intervention"], correct: 1, explanation: "The income approach adds up all income earned by factors of production — wages, rent, interest, and profit." },
   { q: "36. What will happen to national income and size of the economy if G+I+X = T+S+M?", options: ["Shrink", "Equilibrium", "Expand", "None of the above"], correct: 1, explanation: "When total injections (G+I+X) equal total leakages (T+S+M), the economy is in equilibrium — no tendency to expand or contract." },
   { q: "37. A four sector economy is referred to as:", options: ["Injection", "Open economy", "Simple economy", "Closed economy"], correct: 1, explanation: "A four-sector economy includes households, firms, government, and the foreign sector — this makes it an open economy." },
-  { q: "38. Which one is investment in the economy?", options: ["Building a factory", "Buying shares in stock exchange", "Depositing money in housing society", "Depositing money in the bank"], correct: 0, explanation: "In economics, 'investment' means adding to productive capital (like building a factory), not financial transactions like buying shares or saving money in a bank." }
-  ]:
-  const extendedQuizData = [
-  // Page 44
+  { q: "38. Which one is investment in the economy?", options: ["Building a factory", "Buying shares in stock exchange"], correct: 0 },
+  },
+  {
+    q: "Which of these does not represent leakage or a withdrawal in the circular flow of income?",
+    options: ["Taxes", "Imports", "Savings", "Government expenditures"],
+    correct: 3,
+    explanation: "Government expenditures represent an injection into the circular flow, whereas taxes, imports, and savings are leakages."
+  },
+  {
+    q: "What will happen to national income or size of the economy if G + I + X < T + S + M?",
+  },
   {
     q: "Which of these does not represent leakage or a withdrawal in the circular flow of income?",
     options: ["Taxes", "Imports", "Savings", "Government expenditures"],
